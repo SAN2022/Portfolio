@@ -2,28 +2,29 @@ const skills = [
     {
         name: 'HTML',
         src: 'https://www.svgrepo.com/show/452228/html-5.svg',
-        source: './HTML.jpg'
     },
     {
         name: 'CSS',
         src: 'https://www.svgrepo.com/show/452185/css-3.svg',
-        source: './HTML.jpg'
     },
     {
         name: 'Bootstrap',
         src: 'https://www.svgrepo.com/show/353498/bootstrap.svg',
-        source: './HTML.jpg'
     },
     {
         name: 'JavaScript',
         src: 'https://www.svgrepo.com/show/353925/javascript.svg',
-        source: './HTML.jpg'
     },
     {
         name: 'React JS',
         src: 'https://www.svgrepo.com/show/354259/react.svg',
-        source: './HTML.jpg'
+    },
+    {
+        name: 'Wordpress',
+        src: 'https://www.svgrepo.com/show/452136/wordpress.svg',
     }
+    
+
 ]
 export default function Skills(){
     return (
@@ -35,7 +36,7 @@ export default function Skills(){
         <div className="skills mt-2">
 
         {skills.map((skill, index)=>(
-            <div className="card mt-3 me-3" style={{width: '12rem'}} key={index}>
+            <div className="card mt-3 me-3" style={{width: '10rem'}} key={index}>
                 <img src={skill.src} className="card-img-top mt-3" alt={skill.name} width='100px' height='100px'/>
                 <div className="card-body">
                     <h5 className="card-title text-center">{skill.name}</h5>

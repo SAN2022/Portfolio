@@ -1,15 +1,15 @@
-import CRUD from '../assets/Web_Images/CRUD.png'
+// import CRUD from '../assets/Web_Images/CRUD.png'
 import Weather from '../assets/Web_Images/Weather.jpg'
 import Currency from '../assets/Web_Images/Currency.png'
 
 const projectDetails = [
-    {
-        name: 'CRUD Application',
-        description: 'React JS CRUD Application with Node JS Backend handling JSON data',
-        img: CRUD,
-        github_link: '',
-        live: ''
-    },
+    // {
+    //     name: 'CRUD Application',
+    //     description: 'React JS CRUD Application with Node JS Backend handling JSON data',
+    //     img: CRUD,
+    //     github_link: '',
+    //     live: ''
+    // },
     {
         name: 'Weather Application',
         description: 'Search by City Name | Weather application with Open Weather API',
@@ -30,7 +30,7 @@ export default function Projects(){
         <>
             <div className="container" id='projects'>
                 <div className="row">
-                    <h2 className="text-center mt-5">Projects</h2>
+                    <h2 className="text-center mt-5">Main Projects</h2>
                     <div className="col-md-12 projects">
                         {
                             projectDetails.map((project)=>(
@@ -39,7 +39,7 @@ export default function Projects(){
                                     <div className="card-body">
                                         <h5 className="card-title">{project.name}</h5>
                                         <p className="card-text">{project.description}</p>
-                                        <a href={project.live} target="_blank" className="btn btn-primary me-2">View Project</a>
+                                        {project.live && <a href={project.live} target="_blank" className="btn btn-primary me-2">View Project</a>}
                                         <a href={project.github_link} target="_blank" className="btn btn-primary">View Code</a>
                                     </div>
                                 </div>

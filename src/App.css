@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
 header{
     width: 100%;
-    height: 100vh;
+    padding: 6em 0;
     background-color: khaki;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.connect{
+button.connect{
     margin-right: 1em;
+}
+.connect a{
+    text-decoration: none;
+    color: white;
 }
 .btn {background-image: linear-gradient(to right, #FF4E50 0%, #F9D423  51%, #FF4E50  100%)}
 .btn {
@@ -38,6 +48,9 @@ text-decoration: none;
 .bi{
     font-size: 1.5em;
     margin-right: 0.3em;
+}
+.bi:hover{
+    /* font-size: 1.5em; */
 }
 .projects{
     display: flex;
@@ -94,4 +107,13 @@ header{
     height: 450px;
     margin-bottom: 1em;
     margin-top: 3em;
+}
+.bi-whatsapp{
+    color: #25d366;
+}
+.bi-linkedin{
+    color: #0a66c2
+}
+.bi-github{
+    color: black;
 }

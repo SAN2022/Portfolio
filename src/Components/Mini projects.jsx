@@ -6,8 +6,8 @@ const miniProjectDetails = [
         name: 'Quiz Application',
         description: 'Multi choice Quiz Application with timer and score',
         img: QuizApp,
-        github_link: '',
-        live: ''
+        github_link: 'https://github.com/SAN2022/Quiz-application',
+        live: 'https://san2022.github.io/Quiz-application/'
     },
     {
         name: 'QR Code Generator',
