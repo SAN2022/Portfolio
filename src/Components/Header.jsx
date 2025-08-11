@@ -10,7 +10,7 @@ export default function Header(){
         .then((blob) => {
             const link = document.createElement("a")
             link.href = URL.createObjectURL(blob)
-            link.download = "Resume.pdf"
+            link.download = "Santhosh T - Frontend Developer.pdf"
             document.body.appendChild(link)
             link.click()
             document.body.removeChild(link)
@@ -22,7 +22,7 @@ export default function Header(){
                 <div id='header'>
                 {/* <img src={my_img} alt="" width='120px'/> */}
                     <h2>I'm Santhosh T</h2>
-                    <h3>Frontend developer</h3>
+                    <h3>Front-end developer</h3>
                     <h4>A passionate web developer with the skills HTML, CSS, Bootstrap, JavaScript, React JS and Wordpress</h4>
                     <button className='connect btn'><a href="https://wa.me/+918344571951" target='_blank'>Connect with me</a></button>
                     <button className='resume btn' onClick={downloadResume}>Download Resume</button>

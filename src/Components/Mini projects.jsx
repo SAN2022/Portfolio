@@ -1,5 +1,6 @@
 import QuizApp from '../assets/Web_Images/Quiz-app.png';
-import QR from './../assets/Web_Images/QR.jpg'
+import QR from './../assets/Web_Images/QR.jpg';
+import dashboard from './../assets/Web_Images/dashboard.png';
 
 const miniProjectDetails = [
     {
@@ -15,6 +16,13 @@ const miniProjectDetails = [
         img: QR,
         github_link: 'https://github.com/SAN2022/QR-Code-Generator',
         live: 'https://san2022.github.io/QR-Code-Generator/'
+    },
+    {
+        name: 'Leads Dashboard (UI)',
+        description: 'Responsive Leads Dashboard UI',
+        img: dashboard,
+        github_link: 'https://github.com/SAN2022/Leads-Dashboard',
+        live: 'https://leads-dashboard-nu.vercel.app/'
     }
 ]
 export default function MiniProjects(){
@@ -27,7 +35,7 @@ export default function MiniProjects(){
                     {
                         miniProjectDetails.map((project, index)=>(
                             <div className="card mt-3" style={{width: "18rem"}} key={index}>
-                                <img src={project.img} className="card-img-top" alt="crud.png"/>
+                                <img src={project.img} className="card-img-top" alt="crud.png" width={'100%'} height={'250px'}/>
                                 <div className="card-body">
                                     <h5 className="card-title">{project.name}</h5>
                                     <p className="card-text">{project.description}</p>
