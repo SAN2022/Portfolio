@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 const skills = [
     {
         name: 'HTML',
@@ -29,7 +31,8 @@ const skills = [
 export default function Skills(){
     return (
         <>
-        <div className="container">
+        <div 
+        className="container">
         <div className="row" id="skills"> 
         <div className="col-md-12">
         <h2 className="text-center mt-5">Skills</h2>

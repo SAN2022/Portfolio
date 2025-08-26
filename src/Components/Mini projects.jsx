@@ -1,6 +1,7 @@
 import QuizApp from '../assets/Web_Images/Quiz-app.png';
 import QR from './../assets/Web_Images/QR.jpg';
 import dashboard from './../assets/Web_Images/dashboard.png';
+import { motion } from "motion/react";
 
 const miniProjectDetails = [
     {
@@ -28,7 +29,8 @@ const miniProjectDetails = [
 export default function MiniProjects(){
     return (
         <>
-            <div className="container" id='mini-projects'>
+            <div 
+            className="container" id='mini-projects'>
             <div className="row">
                 <h2 className="text-center mt-5">Mini Projects</h2>
                 <div className="col-md-12 mini-projects">

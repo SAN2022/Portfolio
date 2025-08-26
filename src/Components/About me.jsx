@@ -1,6 +1,9 @@
+import { motion } from "motion/react";
+
 export default function AboutMe(){
   return (
-    <div className="container about-me text-center " id='about-me'>
+    <div 
+      className="container about-me text-center " id='about-me'>
         <div className="row">
         <div className="col-md-12">
         <h2 className="mt-5">About Me</h2>

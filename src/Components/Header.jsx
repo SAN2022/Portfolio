@@ -19,7 +19,11 @@ export default function Header(){
     return (
         <>
             <header>
-                <div id='header'>
+                <motion.div 
+                    initial={{ opacity: 0, y:50 }}
+                    whileInView={{ opacity: 1, y:0, transition: {delay: 0.4, duration: 0.5}}}
+                    viewport={{once: false, amount: .5}}
+                    className='header'>
                 {/* <img src={my_img} alt="" width='120px'/> */}
                     <h2>I'm Santhosh T</h2>
                     <h3>Front-end developer</h3>
@@ -31,7 +35,7 @@ export default function Header(){
                         <a className='social-links' href="https://github.com/SAN2022" target='_blank'><i class="bi bi-github"></i></a>
                         <a className='social-links' href="https://www.linkedin.com/in/santhosh-t-4159ba228/" target='_blank'><i class="bi bi-linkedin"></i></a>
                     </div>
-                </div>
+                </motion.div>
             </header>
         </>
     )

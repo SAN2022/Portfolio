@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './../App.css'
-
 import Web_dev from '../assets/Web_Images/Web Development Internship.png'
 
 const internshipDetails = [
