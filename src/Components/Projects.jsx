@@ -23,6 +23,13 @@ const projectDetails = [
         img: Currency,
         github_link: 'https://github.com/SAN2022/Currency-converter',
         live: 'https://san2022.github.io/Currency-converter/'
+    },
+    {
+        name: 'BMI Calculator',
+        description: 'Calculate Body Mass Index by providing Height and Weight',
+        img: Currency,
+        github_link: 'https://github.com/SAN2022/Currency-converter',
+        live: 'https://san2022.github.io/Currency-converter/'
     }
 ]
 export default function Projects(){

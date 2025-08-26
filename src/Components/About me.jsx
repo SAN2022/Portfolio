@@ -25,6 +25,7 @@ export default function AboutMe(){
         <p className="text-lg text-gray-600 mt-4 leading-relaxed">
           My goal is to build scalable, user-friendly web apps that make a positive impact.
         </p> */}
+        
       </div>
       </div>
 </div>
