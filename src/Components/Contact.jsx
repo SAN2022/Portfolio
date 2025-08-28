@@ -49,10 +49,10 @@ export default function Contact(){
     }
     return (
         <>
-            <div className="container" id='contact'>
+            <div className="order-1 container" id='contact'>
             {/* <h2 className="text-center mt-3">Contact form</h2> */}
             <div className="row mt-4">
-                <div className="col-md-6">
+                <div className="col-md-6 order-2 order-md-1">
                 <h2>Contact Form</h2>
                 <form>
                     <div className="">
@@ -77,7 +77,7 @@ export default function Contact(){
                 </form>
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
                 <div className="contact">
                     <img src={contact_us} alt="contact-us" width='100%'/>
                 </div>

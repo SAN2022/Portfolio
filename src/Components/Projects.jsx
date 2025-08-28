@@ -1,5 +1,5 @@
 // import CRUD from '../assets/Web_Images/CRUD.png'
-import Weather from '../assets/Web_Images/Weather.jpg'
+import Weather from '../assets/Web_Images/Weather.png'
 import Currency from '../assets/Web_Images/Currency.png'
 import BMI from '../assets/Web_Images/BMI.png'
 import { motion } from "motion/react";
@@ -20,7 +20,7 @@ const projectDetails = [
         live: 'https://san2022.github.io/Weather-application/'
     },
     {
-        name: 'Currency converter',
+        name: 'Currency Converter',
         description: 'Convert from currency to currency',
         img: Currency,
         github_link: 'https://github.com/SAN2022/Currency-converter',
@@ -30,8 +30,8 @@ const projectDetails = [
         name: 'BMI Calculator',
         description: 'Calculate Body Mass Index by providing Height and Weight',
         img: BMI,
-        github_link: 'https://github.com/SAN2022/Currency-converter',
-        live: 'https://san2022.github.io/Currency-converter/'
+        github_link: 'https://github.com/SAN2022/BMI-Calculator-App',
+        live: 'https://san2022.github.io/BMI-Calculator-App/'
     }
 ]
 export default function Projects(){
@@ -44,8 +44,8 @@ export default function Projects(){
                     <div 
                         className="col-md-12 projects">
                             {
-                                projectDetails.map((project)=>(
-                                    <div className="card mt-3" style={{width: "18rem"}}>
+                                projectDetails.map((project, index)=>(
+                                    <div className="card mt-3" style={{width: "18rem"}} key={index}>
                                         {/* <div className='' style={{width: '100%', height: '200px', backgroundImage: `url(${project.img})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: '70% 20%'}}></div> */}
                                         <img src={project.img} className="card-img-top" alt="crud.png"/>
                                         <div className="card-body">

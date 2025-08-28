@@ -7,6 +7,7 @@ import Contact from './Components/Contact'
 import MiniProjects from './Components/Mini projects'
 import Internships from './Components/Internship'
 import AboutMe from './Components/About me'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <MiniProjects/>
       <Internships/>
       <Contact/>
+      <Footer/>
     </>
   )
 }
