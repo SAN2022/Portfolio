@@ -1,5 +1,5 @@
-import QuizApp from '../assets/Web_Images/Quiz-app.png';
-import QR from './../assets/Web_Images/QR.jpg';
+import QuizApp from '../assets/Web_Images/Quiz.png';
+import QR from './../assets/Web_Images/QR.png';
 import dashboard from './../assets/Web_Images/dashboard.png';
 import { motion } from "motion/react";
 
@@ -13,7 +13,7 @@ const miniProjectDetails = [
     },
     {
         name: 'QR Code Generator',
-        description: 'QR Code Generator',
+        description: 'Get QR Code for your given data',
         img: QR,
         github_link: 'https://github.com/SAN2022/QR-Code-Generator',
         live: 'https://san2022.github.io/QR-Code-Generator/'

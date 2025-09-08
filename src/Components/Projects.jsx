@@ -2,6 +2,8 @@
 import Weather from '../assets/Web_Images/Weather.png'
 import Currency from '../assets/Web_Images/Currency.png'
 import BMI from '../assets/Web_Images/BMI.png'
+import Aswin from '../assets/Web_Images/Aswin.png'
+import Maaruthi from '../assets/Web_Images/Maaruthi.png'
 import { motion } from "motion/react";
 
 const projectDetails = [
@@ -13,8 +15,22 @@ const projectDetails = [
     //     live: ''
     // },
     {
+        name: 'Aswin Homeopathy Clinic',
+        description: 'Developed a modern, responsive website for Aswin Homeopathy Clinic to showcase treatments, patient testimonials, and enable easy appointment booking, enhancing their digital presence and patient engagement.',
+        img: Aswin,
+        github_link: 'https://github.com/SAN2022/aswin-homeo-clinic',
+        live: 'https://aswin-homeo-clinic.vercel.app/'
+    },
+    {
+        name: 'Sri Maaruthi Siddha Clinic',
+        description: 'Designed and built a professional website for Sri Maaruthi Siddha Clinic, highlighting traditional Siddha treatments, doctor’s expertise, and a detailed disease section with an intuitive user experience for patients.',
+        img: Maaruthi,
+        github_link: 'https://github.com/SAN2022/Maaruthi-Siddha-Clinic',
+        live: 'https://maaruthi-siddha-clinic.vercel.app/'
+    },
+    {
         name: 'Weather Application',
-        description: 'Search by City Name | Weather application with Open Weather API',
+        description: 'Get live weather by searching your city name | Weather application with Open Weather API',
         img: Weather,
         github_link: 'https://github.com/SAN2022/Weather-application',
         live: 'https://san2022.github.io/Weather-application/'
@@ -40,7 +56,7 @@ export default function Projects(){
             <div 
             className="container" id='projects'>
                 <div className="row">
-                    <h2 className="text-center mt-5">Main Projects</h2>
+                    <h2 className="text-center mt-5 border-b-3 border-red">Main Projects</h2>
                     <div 
                         className="col-md-12 projects">
                             {
