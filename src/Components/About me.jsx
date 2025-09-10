@@ -1,36 +1,55 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
-export default function AboutMe(){
+export default function AboutMe() {
   return (
-    <div 
-      className="container about-me text-center " id='about-me'>
-        <div className="row">
-        <div className="col-md-12">
-        <h2 className="mt-5">About Me</h2>
-        <h5 className="lh-lg">
-            Hi! I'm Santhosh T, a passionate and detail-oriented front-end developer specializing in React.js. I enjoy turning complex problems into simple, beautiful, and intuitive user interfaces. 
-            I have experience building responsive web applications with modern technologies like React,
-            JavaScript, and REST APIs. I'm always eager to learn and stay up-to-date with the latest in web development.
-            When I'm not coding, you'll find me exploring design trends, reading tech blogs, or working on side projects.
-            My goal is to build scalable, user-friendly web apps that make a positive impact.
-        </h5>
+    <section
+      id="about-me"
+      className="py-16 px-6 bg-gray-50"
+    >
+      <div className="max-w-4xl mx-auto text-center">
+        {/* Heading */}
+        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+          About Me
+        </h2>
         
-        {/* <p className="text-lg text-gray-600 leading-relaxed">
-          Hi! I'm <span className="font-semibold text-gray-800">Santhosh T</span>, a passionate and detail-oriented
-          front-end developer specializing in <span className="text-blue-500">React.js</span>. I enjoy turning complex
-          problems into simple, beautiful, and intuitive user interfaces.
+        {/* Underline */}
+        <motion.div
+          className="w-20 h-1 bg-green-600 mx-auto mb-10 rounded"
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        />       
+
+        {/* Paragraph */}
+        <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+          Hi! I'm{" "}
+          <span className="font-semibold text-green-600">Santhosh T</span>, a
+          passionate and detail-oriented{" "}
+          <span className="font-semibold">Front-End Developer</span> specializing in{" "}
+          <span className="font-semibold">React.js</span>. I enjoy turning
+          complex problems into simple, beautiful, and intuitive user
+          interfaces.
+          <br />
+          <br />
+          I have experience building responsive web applications with modern
+          technologies like{" "}
+          <span className="font-medium">
+            React, JavaScript, and REST APIs
+          </span>
+          . I'm always eager to learn and stay up-to-date with the latest in web
+          development.
+          <br />
+          <br />
+          When I'm not coding, you'll find me exploring design trends, reading
+          tech blogs, or working on side projects. My goal is to build
+          scalable, user-friendly web apps that make a{" "}
+          <span className="font-semibold text-green-600">
+            positive impact
+          </span>
+          .
         </p>
-        <p className="text-lg text-gray-600 mt-4 leading-relaxed">
-          I have experience building responsive web applications with modern technologies like React, Tailwind CSS,
-          JavaScript, and REST APIs. I'm always eager to learn and stay up-to-date with the latest in web development.
-          When I'm not coding, you'll find me exploring design trends, reading tech blogs, or working on side projects.
-        </p>
-        <p className="text-lg text-gray-600 mt-4 leading-relaxed">
-          My goal is to build scalable, user-friendly web apps that make a positive impact.
-        </p> */}
-        
       </div>
-      </div>
-</div>
-  )
+    </section>
+  );
 }

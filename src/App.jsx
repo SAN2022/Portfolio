@@ -17,7 +17,6 @@ function App() {
       <AboutMe/>
       <Skills/>
       <Projects/>
-      <MiniProjects/>
       <Internships/>
       <Contact/>
       <Footer/>

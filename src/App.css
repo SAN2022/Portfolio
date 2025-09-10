@@ -2,9 +2,10 @@
 @import "tailwindcss";
 
 *{
-  font-family: "Inter", sans-serif;
-  box-sizing: border-box;
-  /* background-color: darkgreen; */
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* background-color: darkgreen; */
 }
 header{
     width: 100%;
