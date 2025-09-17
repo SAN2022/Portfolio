@@ -25,14 +25,13 @@ export default function Navbar() {
           <li><a href="#about-me" className="hover:text-green-600 transition">About Me</a></li>
           <li><a href="#skills" className="hover:text-green-600 transition">Skills</a></li>
           <li><a href="#projects" className="hover:text-green-600 transition">Projects</a></li>
-          {/* <li><a href="#mini-projects" className="hover:text-green-600 transition">Mini-Projects</a></li> */}
           <li><a href="#internships" className="hover:text-green-600 transition">Internships</a></li>
         </ul>
 
         {/* Mobile Toggle Button */}
         <button 
           onClick={toggleMenu} 
-          className="md:hidden text-2xl text-gray-700 focus:outline-none"
+          className="md:hidden text-2xl text-gray-700 focus:outline-none cursor-pointer"
         >
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
@@ -42,12 +41,11 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-md">
           <ul className="flex flex-col space-y-4 py-4 px-6 text-gray-700 font-medium">
-            <li><a href="#header" onClick={handleLinkClick}>Home</a></li>
-            <li><a href="#about-me" onClick={handleLinkClick}>About Me</a></li>
-            <li><a href="#skills" onClick={handleLinkClick}>Skills</a></li>
-            <li><a href="#projects" onClick={handleLinkClick}>Projects</a></li>
-            <li><a href="#mini-projects" onClick={handleLinkClick}>Mini-Projects</a></li>
-            <li><a href="#internships" onClick={handleLinkClick}>Internships</a></li>
+            <li><a href="#header" className='hover:text-green-600' onClick={handleLinkClick}>Home</a></li>
+            <li><a href="#about-me" className='hover:text-green-600' onClick={handleLinkClick}>About Me</a></li>
+            <li><a href="#skills" className='hover:text-green-600' onClick={handleLinkClick}>Skills</a></li>
+            <li><a href="#projects" className='hover:text-green-600' onClick={handleLinkClick}>Projects</a></li>
+            <li><a href="#internships" className='hover:text-green-600' onClick={handleLinkClick}>Internships</a></li>
           </ul>
         </div>
       )}

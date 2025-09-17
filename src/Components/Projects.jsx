@@ -115,7 +115,7 @@ export default function Projects() {
             <button
               key={tab}
               onClick={() => setFilter(tab)}
-              className={`px-4 py-2 rounded-md font-semibold capitalize transition ${
+              className={`px-4 py-2 rounded-md font-semibold capitalize transition cursor-pointer ${
                 filter === tab
                   ? "bg-green-600 text-white"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"

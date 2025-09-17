@@ -131,15 +131,14 @@ export default function Contact() {
             {/* Social Links */}
             <div className="flex justify-center md:justify-start gap-6 mt-6">
               <a
-                href="https://wa.me/91XXXXXXXXXX"
-                target="_blank"
+                href="https://wa.me/+918344571951" target='_blank'
                 rel="noopener noreferrer"
                 className="text-green-600 text-2xl hover:scale-110 transition"
               >
                 <FaWhatsapp />
               </a>
               <a
-                href="https://github.com/yourgithub"
+                href="https://github.com/SAN2022"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-800 text-2xl hover:scale-110 transition"
@@ -147,7 +146,7 @@ export default function Contact() {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/yourlinkedin"
+                href="https://www.linkedin.com/in/santhosh-t-4159ba228/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-700 text-2xl hover:scale-110 transition"
